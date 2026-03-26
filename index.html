@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise Criminal · BD II · IFBA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -24,1084 +24,1156 @@
 
         <div id="deck">
 
-        <!-- ══════════════════════ SLIDE 1 · CAPA ══════════════════════ -->
-        <div class="slide active" id="s1">
-            <div class="scan-line"></div>
-            <div class="hex-visual">
-                <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="200,30 355,115 355,285 200,370 45,285 45,115" stroke="#00c8ff" stroke-width="1" />
-                    <polygon points="200,70 325,135 325,265 200,330 75,265 75,135" stroke="#00c8ff"
-                        stroke-width="0.5" />
-                    <polygon points="200,110 295,155 295,245 200,290 105,245 105,155" stroke="#00c8ff"
-                        stroke-width="0.5" />
-                    <circle cx="200" cy="200" r="4" fill="#00c8ff" />
-                    <line x1="200" y1="30" x2="200" y2="370" stroke="#00c8ff" stroke-width="0.3" />
-                    <line x1="45" y1="115" x2="355" y2="285" stroke="#00c8ff" stroke-width="0.3" />
-                    <line x1="355" y1="115" x2="45" y2="285" stroke="#00c8ff" stroke-width="0.3" />
-                </svg>
+            <!-- ══════════════════════ SLIDE 1 · CAPA ══════════════════════ -->
+            <div class="slide active" id="s1">
+                <div class="scan-line"></div>
+                <div class="hex-visual">
+                    <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="200,30 355,115 355,285 200,370 45,285 45,115" stroke="#00c8ff"
+                            stroke-width="1" />
+                        <polygon points="200,70 325,135 325,265 200,330 75,265 75,135" stroke="#00c8ff"
+                            stroke-width="0.5" />
+                        <polygon points="200,110 295,155 295,245 200,290 105,245 105,155" stroke="#00c8ff"
+                            stroke-width="0.5" />
+                        <circle cx="200" cy="200" r="4" fill="#00c8ff" />
+                        <line x1="200" y1="30" x2="200" y2="370" stroke="#00c8ff" stroke-width="0.3" />
+                        <line x1="45" y1="115" x2="355" y2="285" stroke="#00c8ff" stroke-width="0.3" />
+                        <line x1="355" y1="115" x2="45" y2="285" stroke="#00c8ff" stroke-width="0.3" />
+                    </svg>
+                </div>
+                <div class="badge-ifba">
+                    <span class="badge-dot"></span>
+                    <span
+                        style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Instituto
+                        Federal da Bahia</span>
+                </div>
+                <div class="cover-kicker">Banco de Dados III · 2026</div>
+                <h1 class="cover-title">
+                    Análise Criminal<br>
+                    <span style="color:var(--accent);">São Paulo</span><br>
+                    <span style="font-size:0.55em;font-weight:600;color:rgba(232,244,255,0.4);">Engenharia & Governança
+                        de
+                        Dados</span>
+                </h1>
+                <p class="cover-sub">Modelagem relacional, auditoria, segurança, backup, replicação e Data Warehouse
+                    sobre
+                    registros do RDO da SSP-SP.</p>
+                <div class="cover-bar">
+                    <span class="cover-bar-item">SQL Server</span>
+                    <span class="cover-sep"></span>
+                    <span class="cover-bar-item">Always On AG</span>
+                    <span class="cover-sep"></span>
+                    <span class="cover-bar-item">Data Warehouse</span>
+                    <span class="cover-sep"></span>
+                    <span class="cover-bar-item">OLAP · ETL</span>
+                </div>
             </div>
-            <div class="badge-ifba">
-                <span class="badge-dot"></span>
-                <span
-                    style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;">Instituto
-                    Federal da Bahia</span>
-            </div>
-            <div class="cover-kicker">Banco de Dados III · 2026</div>
-            <h1 class="cover-title">
-                Análise Criminal<br>
-                <span style="color:var(--accent);">São Paulo</span><br>
-                <span style="font-size:0.55em;font-weight:600;color:rgba(232,244,255,0.4);">Engenharia & Governança de
-                    Dados</span>
-            </h1>
-            <p class="cover-sub">Modelagem relacional, auditoria, segurança, backup, replicação e Data Warehouse sobre
-                registros do RDO da SSP-SP.</p>
-            <div class="cover-bar">
-                <span class="cover-bar-item">SQL Server</span>
-                <span class="cover-sep"></span>
-                <span class="cover-bar-item">Always On AG</span>
-                <span class="cover-sep"></span>
-                <span class="cover-bar-item">Data Warehouse</span>
-                <span class="cover-sep"></span>
-                <span class="cover-bar-item">OLAP · ETL</span>
-            </div>
-        </div>
 
-        <!-- ══════════════════════ SLIDE 2 · EQUIPE ══════════════════════ -->
-        <div class="slide" id="s2">
-            <div class="slide-badge">02 / Equipe</div>
-            <div style="width:100%;max-width:860px;" class="animate-children">
-                <div class="label">Integrantes do Grupo</div>
-                <h2>Quem somos</h2>
-                <div class="line"></div>
-                <div class="g2" style="margin-top:8px;">
-                    <div class="col">
-                        <div class="member-card">
-                            <div class="avatar">IG</div>
-                            <div>
-                                <div class="member-name">Igor Cauan Alves Santos</div>
-                            </div>
-                        </div>
-                        <div class="member-card">
-                            <div class="avatar">LH</div>
-                            <div>
-                                <div class="member-name">Luiz Henrique Ferreira dos Anjos</div>
-                            </div>
-                        </div>
-                        <div class="member-card">
-                            <div class="avatar">AL</div>
-                            <div>
-                                <div class="member-name">Allan Oliveira Santos</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="member-card">
-                            <div class="avatar">GB</div>
-                            <div>
-                                <div class="member-name">Gabriel Leal Santos</div>
-                            </div>
-                        </div>
-                        <div class="member-card">
-                            <div class="avatar">GU</div>
-                            <div>
-                                <div class="member-name">Guilherme Henrique Menezes Cursino</div>
-                            </div>
-                        </div>
-                        <div class="card" style="margin-top:4px;">
-                            <div
-                                style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:10px;">
-                                Orientador</div>
-                            <div style="font-weight:600;font-size:0.95rem;">Prof. Caio Henrique Nascimento Valverde de
-                                Carvalho</div>
-                            <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
-                                <span class="tag">Banco de Dados 2</span>
-                                <span class="tag2">5º Semestre ADS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-top:16px;display:flex;gap:12px;">
-                    <span class="tag3">IFBA · Santo Antônio de Jesus</span>
-                    <span class="tag">Análise e Desenvolvimento de Sistemas</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 3 · OBJETIVO ══════════════════════ -->
-        <div class="slide" id="s3">
-            <div class="slide-badge">03 / Objetivo</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label">Objetivo do Trabalho</div>
-                <h2>O que este projeto <span class="highlight">resolve?</span></h2>
-                <div class="line"></div>
-                <div class="g2" style="margin-top:6px;">
-                    <div class="col">
-                        <p style="font-size:0.95rem;color:rgba(232,244,255,0.8);">Dados brutos de registros criminais
-                            (RDO) do Estado de São Paulo disponibilizados pela SSP-SP em arquivos CSV desnormalizados
-                            foram transformados em inteligência estratégica para políticas públicas.</p>
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Fonte de Dados</div>
-                            <div style="font-weight:600;margin-bottom:4px;">Registro Digital de Ocorrências (RDO)</div>
-                            <p>Secretaria de Segurança Pública do Estado de São Paulo · Domínio Público · Lei de Acesso
-                                à Informação</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="flex:1;">
-                            <div class="label" style="margin-bottom:10px;">Escopo Completo</div>
-                            <div class="col" style="gap:12px;">
-                                <div class="row">
-                                    <div class="icon-c">🗄️</div>
-                                    <div>
-                                        <div style="font-weight:600;font-size:0.85rem;margin-bottom:2px;">Modelagem &
-                                            Normalização</div>
-                                        <p style="font-size:0.77rem;">3FN, procedures, triggers, functions</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="icon-c2">🔒</div>
-                                    <div>
-                                        <div style="font-weight:600;font-size:0.85rem;margin-bottom:2px;">Auditoria &
-                                            Segurança</div>
-                                        <p style="font-size:0.77rem;">Rastreamento, permissões, DDM</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="icon-c3">💾</div>
-                                    <div>
-                                        <div style="font-weight:600;font-size:0.85rem;margin-bottom:2px;">Backup &
-                                            Replicação</div>
-                                        <p style="font-size:0.77rem;">Full/Diff/Log, Always On AG</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="icon-c">📊</div>
-                                    <div>
-                                        <div style="font-weight:600;font-size:0.85rem;margin-bottom:2px;">Data Warehouse
-                                            & OLAP</div>
-                                        <p style="font-size:0.77rem;">Esquema estrela, ETL, 9 consultas analíticas</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 4 · CONTEXTO DATASET ══════════════════════ -->
-        <div class="slide" id="s4">
-            <div class="slide-badge">04 / Dataset</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label">Contexto do Dataset</div>
-                <h2>Base de dados: <span class="highlight">RDO São Paulo</span></h2>
-                <div class="line"></div>
-                <div class="g2" style="margin-top:6px;gap:24px;">
-                    <div class="col">
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Problema encontrado</div>
-                            <p>Registros brutos disponibilizados em <span class="highlight2">estruturas planas</span> e
-                                arquivos CSV <span class="highlight2">desnormalizados</span>, com repetição textual e
-                                sem controle de integridade.</p>
-                        </div>
-                        <div class="card card-accent3">
-                            <div class="label3"
-                                style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent3);margin-bottom:8px;">
-                                Contexto de uso</div>
-                            <p>Equipe de <strong>pesquisadores do governo federal</strong> analisando o banco de dados
-                                da cidade de São Paulo para identificar as regiões com maior índice de criminalidade,
-                                subsidiando políticas públicas de segurança.</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card-accent2">
-                            <div class="label2" style="margin-bottom:10px;">Dado de entrada (CSV bruto)</div>
-                            <div class="code-block">
-                                <span class="cm">-- CSV original: tudo numa tabela flat</span><br>
-                                <span class="kw">delegacia</span>, seccional, departamento,<br>
-                                bairro, logradouro, lat, lng,<br>
-                                tipo_bo, data_bo, hora_bo,<br>
-                                vitima_nome, vitima_idade, ...<br>
-                                <span class="cm">-- sem chaves, sem relações, com duplicatas</span>
-                            </div>
-                        </div>
-                        <div class="g2" style="gap:14px;">
-                            <div class="card" style="text-align:center;">
-                                <div
-                                    style="font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--accent);">
-                                    1FN→3FN</div>
-                                <div style="font-size:0.72rem;color:var(--muted);margin-top:4px;">Normalização aplicada
-                                </div>
-                            </div>
-                            <div class="card" style="text-align:center;">
-                                <div
-                                    style="font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--accent3);">
-                                    4</div>
-                                <div style="font-size:0.72rem;color:var(--muted);margin-top:4px;">Tabelas resultantes
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 5 · DIAGRAMA ══════════════════════ -->
-        <div class="slide" id="s5">
-            <div class="slide-badge">05 / Diagrama</div>
-            <div style="width:100%;max-width:980px;" class="animate-children">
-                <div class="label">Diagrama do Banco Normalizado</div>
-                <h2>Modelo <span class="highlight">Relacional</span></h2>
-                <div class="line"></div>
-                <div class="g4" style="margin-top:10px;align-items:start;">
-                    <!-- DELEGACIA -->
-                    <div class="db-table">
-                        <div class="db-table-header" style="background:rgba(0,200,255,0.7);">📋 Delegacia</div>
-                        <div class="db-table-row"><span class="db-pk">🔑 id_delegacia</span><span class="db-type">INT
-                                PK</span></div>
-                        <div class="db-table-row"><span>nome_departamento</span><span class="db-type">VARCHAR</span>
-                        </div>
-                        <div class="db-table-row"><span>nome_seccional</span><span class="db-type">VARCHAR</span></div>
-                        <div class="db-table-row"><span>nome_delegacia</span><span class="db-type">VARCHAR</span></div>
-                    </div>
-                    <!-- LOCAL -->
-                    <div class="db-table">
-                        <div class="db-table-header" style="background:rgba(168,255,62,0.6);color:#050a0f;">📍
-                            Local_Ocorrencia</div>
-                        <div class="db-table-row"><span class="db-pk">🔑 id_local</span><span class="db-type">INT
-                                PK</span></div>
-                        <div class="db-table-row"><span>logradouro</span><span class="db-type">VARCHAR</span></div>
-                        <div class="db-table-row"><span>bairro</span><span class="db-type">VARCHAR</span></div>
-                        <div class="db-table-row"><span>latitude</span><span class="db-type">NUMERIC</span></div>
-                        <div class="db-table-row"><span>longitude</span><span class="db-type">NUMERIC</span></div>
-                        <div class="db-table-row"><span>descr_tipolocal</span><span class="db-type">VARCHAR</span></div>
-                    </div>
-                    <!-- BO -->
-                    <div class="db-table">
-                        <div class="db-table-header" style="background:rgba(255,92,53,0.7);">📄 Boletim_Ocorrencia</div>
-                        <div class="db-table-row"><span class="db-pk">🔑 id_deleg_reg</span><span class="db-type">INT
-                                PK</span></div>
-                        <div class="db-table-row"><span class="db-pk">🔑 ano_bo</span><span class="db-type">INT
-                                PK</span></div>
-                        <div class="db-table-row"><span class="db-pk">🔑 num_bo</span><span class="db-type">INT
-                                PK</span></div>
-                        <div class="db-table-row"><span class="db-fk">🔗 id_local</span><span class="db-type">FK</span>
-                        </div>
-                        <div class="db-table-row"><span>descr_tipo_bo</span><span class="db-type">VARCHAR</span></div>
-                        <div class="db-table-row"><span>data_ocorrencia</span><span class="db-type">DATE</span></div>
-                        <div class="db-table-row"><span>rubrica</span><span class="db-type">VARCHAR</span></div>
-                    </div>
-                    <!-- PESSOA -->
-                    <div class="db-table">
-                        <div class="db-table-header" style="background:rgba(138,100,255,0.7);">👤 Pessoa_Envolvida</div>
-                        <div class="db-table-row"><span class="db-pk">🔑 id_envolvido</span><span class="db-type">INT
-                                PK</span></div>
-                        <div class="db-table-row"><span class="db-fk">🔗 id_deleg_reg</span><span
-                                class="db-type">FK</span></div>
-                        <div class="db-table-row"><span class="db-fk">🔗 ano_bo</span><span class="db-type">FK</span>
-                        </div>
-                        <div class="db-table-row"><span class="db-fk">🔗 num_bo</span><span class="db-type">FK</span>
-                        </div>
-                        <div class="db-table-row"><span>descr_tipo_pessoa</span><span class="db-type">VARCHAR</span>
-                        </div>
-                        <div class="db-table-row"><span>sexo_pessoa</span><span class="db-type">VARCHAR</span></div>
-                        <div class="db-table-row"><span>idade_pessoa</span><span class="db-type">INT</span></div>
-                    </div>
-                </div>
-                <div style="margin-top:14px;display:flex;gap:14px;flex-wrap:wrap;">
-                    <div
-                        style="display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);">
-                        <span style="color:var(--accent2);">🔑</span> Chave Primária (composta em BO)
-                    </div>
-                    <div
-                        style="display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);">
-                        <span style="color:var(--accent3);">🔗</span> Chave Estrangeira
-                    </div>
-                    <div
-                        style="display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);">
-                        Pessoa_Envolvida → ON DELETE CASCADE</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 6 · NORMALIZAÇÃO ══════════════════════ -->
-        <div class="slide" id="s6">
-            <div class="slide-badge">06 / Normalização</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label">Processo de Normalização</div>
-                <h2>Da planilha ao modelo <span class="highlight">3FN</span></h2>
-                <div class="line"></div>
-                <div class="g2" style="margin-top:6px;gap:22px;">
-                    <div class="col">
-                        <div class="card">
-                            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
-                                <span class="tag">1ª Forma Normal</span><span class="tag">2ª Forma Normal</span><span
-                                    class="tag">3ª Forma Normal</span>
-                            </div>
-                            <p style="font-size:0.83rem;">O CSV original foi submetido ao processo completo de
-                                normalização, eliminando grupos repetitivos, dependências parciais e transitivas.</p>
-                        </div>
-                        <div class="card card-accent2">
-                            <div class="label2" style="margin-bottom:8px;">Entidades criadas</div>
-                            <div class="col" style="gap:8px;">
-                                <div class="row" style="align-items:center;">
-                                    <div class="icon-c" style="width:32px;height:32px;font-size:12px;">📋</div>
-                                    <p style="font-size:0.8rem;"><strong>Delegacia</strong> — centraliza dados
-                                        administrativos, elimina repetição textual.</p>
-                                </div>
-                                <div class="row" style="align-items:center;">
-                                    <div class="icon-c3" style="width:32px;height:32px;font-size:12px;">📍</div>
-                                    <p style="font-size:0.8rem;"><strong>Local_Ocorrencia</strong> — isola atributos
-                                        espaciais, granularidade de bairro.</p>
-                                </div>
-                                <div class="row" style="align-items:center;">
-                                    <div class="icon-c2" style="width:32px;height:32px;font-size:12px;">📄</div>
-                                    <p style="font-size:0.8rem;"><strong>Boletim_Ocorrencia</strong> — núcleo
-                                        transacional, PK composta para evitar duplicatas.</p>
-                                </div>
-                                <div class="row" style="align-items:center;">
-                                    <div class="icon-c" style="width:32px;height:32px;font-size:12px;">👤</div>
-                                    <p style="font-size:0.8rem;"><strong>Pessoa_Envolvida</strong> — resolve
-                                        cardinalidade 1:N dos delitos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="flex:1;">
-                            <div class="label" style="margin-bottom:10px;">Fluxo de transformação</div>
-                            <div style="display:flex;align-items:flex-start;gap:4px;margin-top:4px;">
-                                <div class="flow-step">
-                                    <div class="flow-circle" style="border-color:var(--accent2);color:var(--accent2);">
-                                        CSV</div>
-                                    <div class="flow-label">Arquivo bruto<br>desnorm.</div>
-                                </div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step">
-                                    <div class="flow-circle">1FN</div>
-                                    <div class="flow-label">Elimina<br>grupos rep.</div>
-                                </div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step">
-                                    <div class="flow-circle">2FN</div>
-                                    <div class="flow-label">Remove dep.<br>parciais</div>
-                                </div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step">
-                                    <div class="flow-circle">3FN</div>
-                                    <div class="flow-label">Remove dep.<br>transitivas</div>
-                                </div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step">
-                                    <div class="flow-circle" style="border-color:var(--accent3);color:var(--accent3);">
-                                        BD</div>
-                                    <div class="flow-label">4 tabelas<br>normalizadas</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card-accent3">
-                            <div
-                                style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
-                                RESULTADO</div>
-                            <p style="font-size:0.82rem;">Integridade referencial garantida com <span
-                                    class="highlight3">ON DELETE CASCADE</span> em Pessoa_Envolvida, evitando registros
-                                órfãos. PK composta no BO assegura exclusão de duplicidades.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 7 · INTEGRIDADE / CONCORRÊNCIA ══════════════════════ -->
-        <div class="slide" id="s7">
-            <div class="slide-badge">07 / Integridade</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label">Lógicas de Negócio</div>
-                <h2>Integridade, Concorrência <span class="highlight">&amp; Transacional</span></h2>
-                <div class="line"></div>
-                <div class="g3" style="margin-top:8px;">
-                    <div class="card">
-                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-                            <div class="icon-c3">ƒ</div>
-                            <div>
-                                <div style="font-weight:600;font-size:0.85rem;">Function Analítica</div>
-                                <span class="tag3" style="font-size:0.65rem;">fn_ClassificarFaixaEtaria</span>
-                            </div>
-                        </div>
-                        <p style="font-size:0.78rem;">Categoriza a idade das vítimas/autores em faixas (<em>Menor,
-                                Jovem, Adulto, Idoso</em>), evitando cálculos repetitivos nos relatórios OLAP.</p>
-                        <div class="code-block" style="margin-top:10px;font-size:0.64rem;">
-                            <span class="kw">IF</span> @idade &lt; 18 → <span class="str">'Menor de Idade'</span><br>
-                            <span class="kw">ELSE IF</span> @idade &lt;= 29 → <span class="str">'Jovem
-                                Adulto'</span><br>
-                            <span class="kw">ELSE IF</span> @idade &lt;= 59 → <span class="str">'Adulto'</span><br>
-                            <span class="kw">ELSE</span> → <span class="str">'Idoso'</span>
-                        </div>
-                    </div>
-                    <div class="card card-accent2">
-                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-                            <div class="icon-c2">⚡</div>
-                            <div>
-                                <div style="font-weight:600;font-size:0.85rem;">Trigger de Integridade</div>
-                                <span class="tag2" style="font-size:0.65rem;">trg_ValidarDataBO</span>
-                            </div>
-                        </div>
-                        <p style="font-size:0.78rem;">Barreira cronológica: bloqueia qualquer registro de ocorrência com
-                            <span class="highlight2">data futura</span>, protegendo a base estatística contra erros de
-                            digitação e anomalias de importação.
-                        </p>
-                        <div class="code-block" style="margin-top:10px;font-size:0.64rem;">
-                            <span class="kw">AFTER INSERT, UPDATE</span><br>
-                            <span class="kw">IF</span> data_bo &gt; <span class="str">GETDATE()</span><br>
-                            RAISERROR + <span class="str">ROLLBACK</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-                            <div class="icon-c">🔄</div>
-                            <div>
-                                <div style="font-weight:600;font-size:0.85rem;">Stored Procedure</div>
-                                <span class="tag" style="font-size:0.65rem;">sp_InserirOcorrenciaCompleta</span>
-                            </div>
-                        </div>
-                        <p style="font-size:0.78rem;">Inserção atômica de <em>Local + BO</em> num único bloco
-                            transacional. Garante o princípio do <span class="highlight">tudo ou nada</span>: em falha
-                            de rede ou concorrência, a operação é inteiramente desfeita.</p>
-                        <div class="code-block" style="margin-top:10px;font-size:0.64rem;">
-                            <span class="kw">BEGIN TRANSACTION</span><br>
-                            INSERT Local_Ocorrencia<br>
-                            SET @id_local = SCOPE_IDENTITY()<br>
-                            INSERT Boletim_Ocorrencia<br>
-                            <span class="kw">COMMIT</span> / <span class="str">ROLLBACK</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 8 · AUDITORIA ══════════════════════ -->
-        <div class="slide" id="s8">
-            <div class="slide-badge">08 / Auditoria</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label2">Política de Auditoria</div>
-                <h2>Rastreamento de <span class="highlight2">acesso</span></h2>
-                <div class="line2"></div>
-                <div class="g2" style="margin-top:6px;gap:22px;">
-                    <div class="col">
-                        <div class="card card-accent2">
-                            <div class="label2" style="margin-bottom:6px;">Por que auditar?</div>
-                            <p style="font-size:0.83rem;">Pesquisadores têm acesso a dados sensíveis de <strong>pessoas
-                                    reais</strong>. Saber quem acessou e o que visualizou é essencial para investigações
-                                forenses e tomadas de decisão.</p>
-                        </div>
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Auditoria de Acesso</div>
-                            <div class="code-block" style="font-size:0.65rem;">
-                                <span class="kw">CREATE SERVER AUDIT</span><br>
-                                Auditoria_Pesquisadores_Gov<br>
-                                <span class="kw">TO FILE</span> (FILEPATH=<span
-                                    class="str">'D:\Logs_Acesso\'</span>)<br>
-                                <span class="kw">WITH</span> (QUEUE_DELAY=1000,<br>
-                                ON_FAILURE=<span class="str">SHUTDOWN</span>);<br><br>
-                                <span class="cm">-- Monitora SELECT em todas as tabelas</span><br>
-                                ADD (SELECT ON dbo.Boletim_Ocorrencia)<br>
-                                ADD (SELECT ON dbo.Pessoa_Envolvida)<br>
-                                ...
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card-accent3">
-                            <div
-                                style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:10px;">
-                                Técnicas Utilizadas</div>
-                            <div class="col" style="gap:10px;">
-                                <div class="row" style="align-items:center;">
-                                    <div class="icon-c3" style="width:34px;height:34px;font-size:13px;">🔒</div>
-                                    <p style="font-size:0.8rem;"><strong>SQL Server Audit</strong> — implementação
-                                        nativa, sem dependências externas.</p>
-                                </div>
-                                <div class="row" style="align-items:center;">
-                                    <div class="icon-c2" style="width:34px;height:34px;font-size:13px;">⛔</div>
-                                    <p style="font-size:0.8rem;"><strong>ON_FAILURE = SHUTDOWN</strong> — se a auditoria
-                                        falhar, o banco inteiro é bloqueado.</p>
-                                </div>
-                                <div class="row" style="align-items:center;">
-                                    <div class="icon-c" style="width:34px;height:34px;font-size:13px;">⏱️</div>
-                                    <p style="font-size:0.8rem;"><strong>QUEUE_DELAY = 1000ms</strong> — gravação
-                                        assíncrona sem impacto no desempenho.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Validação Geográfica</div>
-                            <p style="font-size:0.8rem;">Coordenadas fora do bounding box de São Paulo são capturadas em
-                                tabela de auditoria <span class="highlight">Auditoria_Validacao_Geografica</span>,
-                                evitando destinação de recursos públicos para regiões erradas.</p>
-                            <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
-                                <span class="tag2" style="font-size:0.65rem;">lat: -24.00 a -23.35</span>
-                                <span class="tag2" style="font-size:0.65rem;">lng: -46.82 a -46.36</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 9 · PERMISSÕES ══════════════════════ -->
-        <div class="slide" id="s9">
-            <div class="slide-badge">09 / Permissões</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label">Política de Permissão</div>
-                <h2>Menor privilégio & <span class="highlight">Mascaramento</span></h2>
-                <div class="line"></div>
-                <div class="g2" style="margin-top:6px;gap:22px;">
-                    <div class="col">
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Princípio do menor privilégio</div>
-                            <p style="font-size:0.82rem;">Pesquisadores possuem acesso <strong>apenas de leitura
-                                    (SELECT)</strong>. Nenhum INSERT, UPDATE ou DELETE é permitido, preservando a
-                                integridade para outros setores públicos.</p>
-                        </div>
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Implementação passo a passo</div>
-                            <div class="code-block" style="font-size:0.64rem;">
-                                <span class="cm">-- 1. Login</span><br>
-                                <span class="kw">CREATE LOGIN</span> Pesquisador_Gov<br>
-                                WITH PASSWORD = <span class="str">'***'</span>;<br><br>
-                                <span class="cm">-- 2. Usuário no banco</span><br>
-                                <span class="kw">CREATE USER</span> Login_Pesquisador<br>
-                                FOR LOGIN Pesquisador_Gov;<br><br>
-                                <span class="cm">-- 3. Role + Schema</span><br>
-                                <span class="kw">CREATE ROLE</span> Role_Acesso_Leitura;<br>
-                                GRANT SELECT ON SCHEMA::dbo<br>
-                                TO Role_Acesso_Leitura;<br><br>
-                                <span class="cm">-- 4. Atribuir</span><br>
-                                ALTER ROLE ... ADD MEMBER Pesquisador;
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card-accent2">
-                            <div class="label2" style="margin-bottom:8px;">Dynamic Data Masking (DDM)</div>
-                            <p style="font-size:0.82rem;">Pesquisadores estudam padrões geográficos, <strong>não
-                                    precisam ver dados pessoais das vítimas</strong>. O DDM embaralha automaticamente
-                                campos sensíveis.</p>
-                            <div class="code-block" style="margin-top:10px;font-size:0.64rem;">
-                                <span class="kw">ALTER TABLE</span> dbo.Pessoa_Envolvida<br>
-                                <span class="kw">ALTER COLUMN</span> nome_pessoa<br>
-                                ADD MASKED WITH<br>
-                                (FUNCTION = <span class="str">'default()'</span>);<br><br>
-                                <span class="cm">-- Leitura: vê tudo mascarado</span><br>
-                                GRANT UNMASK TO Role_Acesso_Leitura;
-                            </div>
-                        </div>
-                        <div class="card card-accent3">
-                            <div
-                                style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:10px;">
-                                Vantagem do Schema</div>
-                            <p style="font-size:0.8rem;">Se uma nova tabela for adicionada, basta vinculá-la ao schema —
-                                as permissões são herdadas automaticamente, sem configuração manual.</p>
-                            <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
-                                <span class="tag">Schema</span><span class="tag">Role</span><span
-                                    class="tag3">DDM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 10 · BACKUP ══════════════════════ -->
-        <div class="slide" id="s10">
-            <div class="slide-badge">10 / Backup</div>
-            <div style="width:100%;max-width:920px;" class="animate-children">
-                <div class="label">Política de Backup</div>
-                <h2>Estratégia <span class="highlight">Full · Diff · Log</span></h2>
-                <div class="line"></div>
-                <div class="g3" style="margin-top:8px;">
-                    <div class="card">
-                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-                            <div class="icon-c">💾</div>
-                            <div>
-                                <div style="font-weight:700;font-size:0.9rem;">Backup Full</div><span class="tag"
-                                    style="font-size:0.65rem;">Diário · 02:00</span>
-                            </div>
-                        </div>
-                        <p style="font-size:0.78rem;">Base principal de recuperação. Agendado às 02h — menor movimento
-                            operacional. Garante ponto íntegro e confiável dos dados.</p>
-                        <div class="code-block" style="margin-top:10px;font-size:0.63rem;">
-                            BACKUP DATABASE CrimeData_DB<br>
-                            TO DISK = @FileName<br>
-                            <span class="kw">WITH</span> COMPRESSION, INIT, STATS=10;
-                        </div>
-                    </div>
-                    <div class="card card-accent3">
-                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-                            <div class="icon-c3">🔄</div>
-                            <div>
-                                <div style="font-weight:700;font-size:0.9rem;">Backup Diferencial</div><span
-                                    class="tag3" style="font-size:0.65rem;">A cada 3h · início 05:00</span>
-                            </div>
-                        </div>
-                        <p style="font-size:0.78rem;">Captura apenas alterações desde o último Full. Equilibra
-                            atualidade dos dados, tamanho dos arquivos e impacto no servidor.</p>
-                        <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:4px;">
-                            <span class="tag3" style="font-size:0.62rem;">05h</span><span class="tag3"
-                                style="font-size:0.62rem;">08h</span><span class="tag3"
-                                style="font-size:0.62rem;">11h</span><span class="tag3"
-                                style="font-size:0.62rem;">14h</span><span class="tag3"
-                                style="font-size:0.62rem;">17h</span><span class="tag3"
-                                style="font-size:0.62rem;">20h</span><span class="tag3"
-                                style="font-size:0.62rem;">23h</span>
-                        </div>
-                    </div>
-                    <div class="card card-accent2">
-                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-                            <div class="icon-c2">📋</div>
-                            <div>
-                                <div style="font-weight:700;font-size:0.9rem;">Backup de Log</div><span class="tag2"
-                                    style="font-size:0.65rem;">A cada 30 min</span>
-                            </div>
-                        </div>
-                        <p style="font-size:0.78rem;">Registra cada transação (flagrantes, provas, alterações de
-                            status). Permite recuperação ponto a ponto — essencial em auditorias judiciais.</p>
-                        <div class="code-block" style="margin-top:10px;font-size:0.63rem;">
-                            BACKUP <span class="kw">LOG</span> CrimeData_DB<br>
-                            TO DISK = @FileName<br>
-                            <span class="kw">WITH</span> COMPRESSION, INIT;
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="margin-top:16px;padding:14px 20px;">
-                    <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
-                        <div style="display:flex;align-items:center;gap:8px;"><span class="tag">Modelo FULL</span><span
-                                style="font-size:0.78rem;color:var(--muted);">Histórico completo de transações</span>
-                        </div>
-                        <div style="display:flex;align-items:center;gap:8px;"><span class="tag3">SQL Server
-                                Agent</span><span style="font-size:0.78rem;color:var(--muted);">Jobs automatizados ·
-                                zero intervenção humana</span></div>
-                        <div style="display:flex;align-items:center;gap:8px;"><span class="tag2">Recuperação</span><span
-                                style="font-size:0.78rem;color:var(--muted);">Full → Diff → Logs</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 11 · REPLICAÇÃO ══════════════════════ -->
-        <div class="slide" id="s11">
-            <div class="slide-badge">11 / Replicação</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label">Replicação do Banco</div>
-                <h2>Always On <span class="highlight">Availability Groups</span></h2>
-                <div class="line"></div>
-                <div class="g2" style="margin-top:8px;gap:22px;">
-                    <div class="col">
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Arquitetura distribuída</div>
-                            <div style="display:flex;gap:16px;margin-top:4px;">
-                                <div class="card" style="flex:1;text-align:center;border-color:rgba(0,200,255,0.3);">
-                                    <div style="font-size:1.5rem;margin-bottom:6px;">🖥️</div>
-                                    <div
-                                        style="font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--accent);font-weight:500;">
-                                        sql_primario</div>
-                                    <div style="font-size:0.65rem;color:var(--muted);margin-top:4px;">Porta
-                                        1433<br>Inserções OLTP</div>
-                                </div>
-                                <div style="display:flex;align-items:center;color:var(--accent);font-size:1.2rem;">⇄
-                                </div>
-                                <div class="card" style="flex:1;text-align:center;border-color:rgba(168,255,62,0.3);">
-                                    <div style="font-size:1.5rem;margin-bottom:6px;">🖥️</div>
-                                    <div
-                                        style="font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--accent3);font-weight:500;">
-                                        sql_secundario</div>
-                                    <div style="font-size:0.65rem;color:var(--muted);margin-top:4px;">Porta
-                                        1434<br>Leitura / DW</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card-accent2">
-                            <div class="label2" style="margin-bottom:8px;">Problema resolvido</div>
-                            <p style="font-size:0.8rem;">Cargas ETL do Data Warehouse <strong>não competem</strong> com
-                                transações do dia a dia. O primário atende inserções; o secundário atende consultas
-                                pesadas em modo <span class="highlight2">Read-Intent</span>.</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Configuração técnica</div>
-                            <div class="code-block" style="font-size:0.63rem;">
-                                <span class="kw">CREATE AVAILABILITY GROUP</span> [AG_CrimeData]<br>
-                                WITH (CLUSTER_TYPE = NONE)<br>
-                                FOR REPLICA ON<br>
-                                N'sql_primario' WITH (<br>
-                                AVAILABILITY_MODE = <span class="str">ASYNCHRONOUS_COMMIT</span>,<br>
-                                FAILOVER_MODE = MANUAL,<br>
-                                SEEDING_MODE = AUTOMATIC<br>
-                                ),<br>
-                                N'sql_secundario' WITH (<br>
-                                SECONDARY_ROLE(ALLOW_CONNECTIONS = ALL)<br>
-                                );
-                            </div>
-                        </div>
-                        <div class="card card-accent3">
-                            <div
-                                style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
-                                Validação em tempo real</div>
-                            <p style="font-size:0.79rem;">90% da base histórica carregada inicialmente. Os 10% restantes
-                                inseridos ao vivo no primário — o <span class="highlight3">SELECT COUNT(*)</span> na
-                                réplica refletiu as inserções instantaneamente, atestando a integridade.</p>
-                            <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
-                                <span class="tag3">Docker containers</span><span class="tag">Certificados
-                                    SSL</span><span class="tag2">Endpoint TCP:5022</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 12 · WAREHOUSE INTERLUDE ══════════════════════ -->
-        <div class="slide" id="s12">
-            <div class="scan-line"></div>
-            <div style="text-align:center;" class="animate-children">
-                <div class="wh-title pulse">DATA<br>WAREHOUSE</div>
-                <div class="wh-imgs">
-                    <div class="wh-img-card">
-                        <div class="wh-icon">🏗️</div>
-                        <div class="wh-cap">Esquema Estrela</div>
-                    </div>
-                    <div class="wh-img-card">
-                        <div class="wh-icon">🔄</div>
-                        <div class="wh-cap">Processo ETL</div>
-                    </div>
-                    <div class="wh-img-card">
-                        <div class="wh-icon">📊</div>
-                        <div class="wh-cap">Consultas OLAP</div>
-                    </div>
-                    <div class="wh-img-card">
-                        <div class="wh-icon">🔑</div>
-                        <div class="wh-cap">Surrogate Keys</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 13 · ESQUEMA DIMENSIONAL ══════════════════════ -->
-        <div class="slide" id="s13">
-            <div class="slide-badge">13 / Esquema Dimensional</div>
-            <div style="width:100%;max-width:980px;display:flex;gap:28px;align-items:center;" class="animate-children">
-                <div style="flex:1.1;">
-                    <div class="label">Data Warehouse</div>
-                    <h2>Diagrama do Esquema <span class="highlight">Estrela</span></h2>
+            <!-- ══════════════════════ SLIDE 2 · EQUIPE ══════════════════════ -->
+            <div class="slide" id="s2">
+                <div class="slide-badge">02 / Equipe</div>
+                <div style="width:100%;max-width:860px;" class="animate-children">
+                    <div class="label">Integrantes do Grupo</div>
+                    <h2>Quem somos</h2>
                     <div class="line"></div>
-                    <!-- Star Schema visual -->
-                    <div style="position:relative;width:100%;height:340px;margin-top:10px;">
-                        <!-- CENTER FACT -->
-                        <div
-                            style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,200,255,0.12);border:2px solid var(--accent);border-radius:10px;padding:12px 14px;text-align:center;font-family:'DM Mono',monospace;font-size:0.68rem;color:var(--accent);z-index:2;min-width:130px;">
-                            <div style="font-weight:700;font-size:0.75rem;margin-bottom:6px;">⭐ FATO_OCORRENCIAS</div>
-                            <div style="color:rgba(232,244,255,0.5);font-size:0.6rem;">sk_tempo · sk_local</div>
-                            <div style="color:rgba(232,244,255,0.5);font-size:0.6rem;">sk_pessoa · sk_delegacia</div>
-                            <div style="color:var(--accent2);font-size:0.6rem;margin-top:4px;">flag_vitima_fatal</div>
-                        </div>
-                        <!-- TOP: DIM_TEMPO -->
-                        <div
-                            style="position:absolute;top:4px;left:50%;transform:translateX(-50%);background:rgba(10,21,32,0.9);border:1px solid var(--border);border-radius:8px;padding:8px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);min-width:100px;">
-                            <div style="color:var(--accent3);font-weight:600;margin-bottom:4px;">⏰ Dim_Tempo</div>
-                            sk_tempo · data_completa<br>ano · mes · hora
-                        </div>
-                        <!-- BOTTOM: DIM_PESSOA -->
-                        <div
-                            style="position:absolute;bottom:4px;left:50%;transform:translateX(-50%);background:rgba(10,21,32,0.9);border:1px solid var(--border);border-radius:8px;padding:8px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);min-width:100px;">
-                            <div style="color:#a855f7;font-weight:600;margin-bottom:4px;">👤 Dim_Pessoa</div>
-                            sk_pessoa · sexo<br>idade · profissão · cor
-                        </div>
-                        <!-- LEFT: DIM_DELEGACIA -->
-                        <div
-                            style="position:absolute;top:50%;left:0;transform:translateY(-50%);background:rgba(10,21,32,0.9);border:1px solid var(--border);border-radius:8px;padding:8px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);min-width:100px;">
-                            <div style="color:var(--accent2);font-weight:600;margin-bottom:4px;">📋 Dim_Delegacia</div>
-                            sk_delegacia<br>nome · seccional<br>departamento
-                        </div>
-                        <!-- RIGHT: DIM_LOCAL -->
-                        <div
-                            style="position:absolute;top:50%;right:0;transform:translateY(-50%);background:rgba(10,21,32,0.9);border:1px solid var(--border);border-radius:8px;padding:8px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);min-width:100px;">
-                            <div style="color:var(--accent3);font-weight:600;margin-bottom:4px;">📍 Dim_Local</div>
-                            sk_local · bairro<br>cidade · lat · lng<br>tipo_local
-                        </div>
-                        <!-- Lines (SVG) -->
-                        <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <line x1="50%" y1="50%" x2="50%" y2="14%" stroke="#0e2030" stroke-width="1.5" />
-                            <line x1="50%" y1="50%" x2="50%" y2="87%" stroke="#0e2030" stroke-width="1.5" />
-                            <line x1="50%" y1="50%" x2="13%" y2="50%" stroke="#0e2030" stroke-width="1.5" />
-                            <line x1="50%" y1="50%" x2="87%" y2="50%" stroke="#0e2030" stroke-width="1.5" />
-                        </svg>
-                    </div>
-                </div>
-                <div style="flex:0.9;" class="col">
-                    <div class="card card-accent3">
-                        <div
-                            style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
-                            Por que esquema estrela?</div>
-                        <p style="font-size:0.8rem;">Otimizado para consultas OLAP. A tabela fato centraliza os eventos;
-                            as dimensões enriquecem a análise com contexto temporal, geográfico, demográfico e
-                            administrativo.</p>
-                    </div>
-                    <div class="card card-accent2">
-                        <div class="label2" style="margin-bottom:8px;">Surrogate Keys (SK)</div>
-                        <p style="font-size:0.79rem;">Chaves substitutas evitam colisão de IDs ao integrar múltiplos
-                            datasets. Ex.: bairro com ID 100 em SP-cidade vira SK=1; mesmo ID de SP-estado vira SK=2.
-                        </p>
-                    </div>
-                    <div class="card" style="display:flex;gap:16px;justify-content:space-around;text-align:center;">
-                        <div>
-                            <div
-                                style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:var(--accent);">
-                                1</div>
-                            <div style="font-size:0.68rem;color:var(--muted);">Tabela Fato</div>
-                        </div>
-                        <div>
-                            <div
-                                style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:var(--accent3);">
-                                4</div>
-                            <div style="font-size:0.68rem;color:var(--muted);">Dimensões</div>
-                        </div>
-                        <div>
-                            <div
-                                style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:var(--accent2);">
-                                9</div>
-                            <div style="font-size:0.68rem;color:var(--muted);">Consultas OLAP</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 14 · COMO FOI FEITO O ESQUEMA ══════════════════════ -->
-        <div class="slide" id="s14">
-            <div class="slide-badge">14 / Esquema Dimensional</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label">Como foi feito</div>
-                <h2>Construção do <span class="highlight">Esquema Dimensional</span></h2>
-                <div class="line"></div>
-                <div class="g2" style="margin-top:8px;gap:22px;">
-                    <div class="col">
-                        <div class="card card-accent2">
-                            <div class="label2" style="margin-bottom:8px;">Decisão de design</div>
-                            <p style="font-size:0.82rem;">A <strong>Fato_Ocorrencias</strong> foi escolhida como centro
-                                por ser o objeto principal de estudo. Toda inteligência extraída pelos pesquisadores
-                                orbita em torno dos eventos criminais registrados.</p>
-                        </div>
-                        <div class="card">
-                            <div class="label" style="margin-bottom:8px;">Mapeamento OLTP → DW</div>
-                            <div class="col" style="gap:8px;">
-                                <div
-                                    style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;padding:6px 0;border-bottom:1px solid var(--border);">
-                                    <span style="color:var(--muted);">Delegacia (OLTP)</span>
-                                    <span style="color:var(--accent);">→</span>
-                                    <span>Dim_Delegacia (DW)</span>
+                    <div class="g2" style="margin-top:8px;">
+                        <div class="col">
+                            <div class="member-card">
+                                <div class="avatar">IG</div>
+                                <div>
+                                    <div class="member-name">Igor Cauan Alves Santos</div>
                                 </div>
-                                <div
-                                    style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;padding:6px 0;border-bottom:1px solid var(--border);">
-                                    <span style="color:var(--muted);">Local_Ocorrencia</span>
-                                    <span style="color:var(--accent);">→</span>
-                                    <span>Dim_Local</span>
+                            </div>
+                            <div class="member-card">
+                                <div class="avatar">LH</div>
+                                <div>
+                                    <div class="member-name">Luiz Henrique Ferreira dos Anjos</div>
                                 </div>
-                                <div
-                                    style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;padding:6px 0;border-bottom:1px solid var(--border);">
-                                    <span style="color:var(--muted);">Pessoa_Envolvida</span>
-                                    <span style="color:var(--accent);">→</span>
-                                    <span>Dim_Pessoa</span>
+                            </div>
+                            <div class="member-card">
+                                <div class="avatar">AL</div>
+                                <div>
+                                    <div class="member-name">Allan Oliveira Santos</div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="member-card">
+                                <div class="avatar">GB</div>
+                                <div>
+                                    <div class="member-name">Gabriel Leal Santos</div>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="avatar">GU</div>
+                                <div>
+                                    <div class="member-name">Guilherme Henrique Menezes Cursino</div>
+                                </div>
+                            </div>
+                            <div class="card" style="margin-top:4px;">
                                 <div
-                                    style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;padding:6px 0;">
-                                    <span style="color:var(--muted);">data_ocorrencia</span>
-                                    <span style="color:var(--accent);">→</span>
-                                    <span>Dim_Tempo</span>
+                                    style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:10px;">
+                                    Orientador</div>
+                                <div style="font-weight:600;font-size:0.95rem;">Prof. Caio Henrique Nascimento Valverde
+                                    de
+                                    Carvalho</div>
+                                <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+                                    <span class="tag">Banco de Dados 2</span>
+                                    <span class="tag2">5º Semestre ADS</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div style="margin-top:16px;display:flex;gap:12px;">
+                        <span class="tag3">IFBA · Santo Antônio de Jesus</span>
+                        <span class="tag">Análise e Desenvolvimento de Sistemas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 3 · OBJETIVO ══════════════════════ -->
+            <div class="slide" id="s3">
+                <div class="slide-badge">03 / Objetivo</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label">Objetivo do Trabalho</div>
+                    <h2>O que este projeto <span class="highlight">resolve?</span></h2>
+                    <div class="line"></div>
+                    <div class="g2" style="margin-top:6px;">
+                        <div class="col">
+                            <p style="font-size:0.95rem;color:rgba(232,244,255,0.8);">Dados brutos de registros
+                                criminais
+                                (RDO) do Estado de São Paulo disponibilizados pela SSP-SP em arquivos CSV
+                                desnormalizados
+                                foram transformados em inteligência estratégica para políticas públicas.</p>
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Fonte de Dados</div>
+                                <div style="font-weight:600;margin-bottom:4px;">Registro Digital de Ocorrências (RDO)
+                                </div>
+                                <p>Secretaria de Segurança Pública do Estado de São Paulo · Domínio Público · Lei de
+                                    Acesso
+                                    à Informação</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="flex:1;">
+                                <div class="label" style="margin-bottom:10px;">Escopo Completo</div>
+                                <div class="col" style="gap:12px;">
+                                    <div class="row">
+                                        <div class="icon-c">🗄️</div>
+                                        <div>
+                                            <div style="font-weight:600;font-size:0.85rem;margin-bottom:2px;">Modelagem
+                                                &
+                                                Normalização</div>
+                                            <p style="font-size:0.77rem;">3FN, procedures, triggers, functions</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="icon-c2">🔒</div>
+                                        <div>
+                                            <div style="font-weight:600;font-size:0.85rem;margin-bottom:2px;">Auditoria
+                                                &
+                                                Segurança</div>
+                                            <p style="font-size:0.77rem;">Rastreamento, permissões, DDM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="icon-c3">💾</div>
+                                        <div>
+                                            <div style="font-weight:600;font-size:0.85rem;margin-bottom:2px;">Backup &
+                                                Replicação</div>
+                                            <p style="font-size:0.77rem;">Full/Diff/Log, Always On AG</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="icon-c">📊</div>
+                                        <div>
+                                            <div style="font-weight:600;font-size:0.85rem;margin-bottom:2px;">Data
+                                                Warehouse
+                                                & OLAP</div>
+                                            <p style="font-size:0.77rem;">Esquema estrela, ETL, 9 consultas analíticas
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 4 · CONTEXTO DATASET ══════════════════════ -->
+            <div class="slide" id="s4">
+                <div class="slide-badge">04 / Dataset</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label">Contexto do Dataset</div>
+                    <h2>Base de dados: <span class="highlight">RDO São Paulo</span></h2>
+                    <div class="line"></div>
+                    <div class="g2" style="margin-top:6px;gap:24px;">
+                        <div class="col">
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Problema encontrado</div>
+                                <p>Registros brutos disponibilizados em <span class="highlight2">estruturas
+                                        planas</span> e
+                                    arquivos CSV <span class="highlight2">desnormalizados</span>, com repetição textual
+                                    e
+                                    sem controle de integridade.</p>
+                            </div>
+                            <div class="card card-accent3">
+                                <div class="label3"
+                                    style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent3);margin-bottom:8px;">
+                                    Contexto de uso</div>
+                                <p>Equipe de <strong>pesquisadores do governo federal</strong> analisando o banco de
+                                    dados
+                                    da cidade de São Paulo para identificar as regiões com maior índice de
+                                    criminalidade,
+                                    subsidiando políticas públicas de segurança.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-accent2">
+                                <div class="label2" style="margin-bottom:10px;">Dado de entrada (CSV bruto)</div>
+                                <div class="code-block">
+                                    <span class="cm">-- CSV original: tudo numa tabela flat</span><br>
+                                    <span class="kw">delegacia</span>, seccional, departamento,<br>
+                                    bairro, logradouro, lat, lng,<br>
+                                    tipo_bo, data_bo, hora_bo,<br>
+                                    vitima_nome, vitima_idade, ...<br>
+                                    <span class="cm">-- sem chaves, sem relações, com duplicatas</span>
+                                </div>
+                            </div>
+                            <div class="g2" style="gap:14px;">
+                                <div class="card" style="text-align:center;">
+                                    <div
+                                        style="font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--accent);">
+                                        1FN→3FN</div>
+                                    <div style="font-size:0.72rem;color:var(--muted);margin-top:4px;">Normalização
+                                        aplicada
+                                    </div>
+                                </div>
+                                <div class="card" style="text-align:center;">
+                                    <div
+                                        style="font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--accent3);">
+                                        4</div>
+                                    <div style="font-size:0.72rem;color:var(--muted);margin-top:4px;">Tabelas
+                                        resultantes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 5 · DIAGRAMA ══════════════════════ -->
+            <div class="slide" id="s5">
+                <div class="slide-badge">05 / Diagrama</div>
+                <div style="width:100%;max-width:980px;" class="animate-children">
+                    <div class="label">Diagrama do Banco Normalizado</div>
+                    <h2>Modelo <span class="highlight">Relacional</span></h2>
+                    <div class="line"></div>
+                    <div class="g4" style="margin-top:10px;align-items:start;">
+                        <!-- DELEGACIA -->
+                        <div class="db-table">
+                            <div class="db-table-header" style="background:rgba(0,200,255,0.7);">📋 Delegacia</div>
+                            <div class="db-table-row"><span class="db-pk">🔑 id_delegacia</span><span
+                                    class="db-type">INT
+                                    PK</span></div>
+                            <div class="db-table-row"><span>nome_departamento</span><span class="db-type">VARCHAR</span>
+                            </div>
+                            <div class="db-table-row"><span>nome_seccional</span><span class="db-type">VARCHAR</span>
+                            </div>
+                            <div class="db-table-row"><span>nome_delegacia</span><span class="db-type">VARCHAR</span>
+                            </div>
+                        </div>
+                        <!-- LOCAL -->
+                        <div class="db-table">
+                            <div class="db-table-header" style="background:rgba(168,255,62,0.6);color:#050a0f;">📍
+                                Local_Ocorrencia</div>
+                            <div class="db-table-row"><span class="db-pk">🔑 id_local</span><span class="db-type">INT
+                                    PK</span></div>
+                            <div class="db-table-row"><span>logradouro</span><span class="db-type">VARCHAR</span></div>
+                            <div class="db-table-row"><span>bairro</span><span class="db-type">VARCHAR</span></div>
+                            <div class="db-table-row"><span>latitude</span><span class="db-type">NUMERIC</span></div>
+                            <div class="db-table-row"><span>longitude</span><span class="db-type">NUMERIC</span></div>
+                            <div class="db-table-row"><span>descr_tipolocal</span><span class="db-type">VARCHAR</span>
+                            </div>
+                        </div>
+                        <!-- BO -->
+                        <div class="db-table">
+                            <div class="db-table-header" style="background:rgba(255,92,53,0.7);">📄 Boletim_Ocorrencia
+                            </div>
+                            <div class="db-table-row"><span class="db-pk">🔑 id_deleg_reg</span><span
+                                    class="db-type">INT
+                                    PK</span></div>
+                            <div class="db-table-row"><span class="db-pk">🔑 ano_bo</span><span class="db-type">INT
+                                    PK</span></div>
+                            <div class="db-table-row"><span class="db-pk">🔑 num_bo</span><span class="db-type">INT
+                                    PK</span></div>
+                            <div class="db-table-row"><span class="db-fk">🔗 id_local</span><span
+                                    class="db-type">FK</span>
+                            </div>
+                            <div class="db-table-row"><span>descr_tipo_bo</span><span class="db-type">VARCHAR</span>
+                            </div>
+                            <div class="db-table-row"><span>data_ocorrencia</span><span class="db-type">DATE</span>
+                            </div>
+                            <div class="db-table-row"><span>rubrica</span><span class="db-type">VARCHAR</span></div>
+                        </div>
+                        <!-- PESSOA -->
+                        <div class="db-table">
+                            <div class="db-table-header" style="background:rgba(138,100,255,0.7);">👤 Pessoa_Envolvida
+                            </div>
+                            <div class="db-table-row"><span class="db-pk">🔑 id_envolvido</span><span
+                                    class="db-type">INT
+                                    PK</span></div>
+                            <div class="db-table-row"><span class="db-fk">🔗 id_deleg_reg</span><span
+                                    class="db-type">FK</span></div>
+                            <div class="db-table-row"><span class="db-fk">🔗 ano_bo</span><span
+                                    class="db-type">FK</span>
+                            </div>
+                            <div class="db-table-row"><span class="db-fk">🔗 num_bo</span><span
+                                    class="db-type">FK</span>
+                            </div>
+                            <div class="db-table-row"><span>descr_tipo_pessoa</span><span class="db-type">VARCHAR</span>
+                            </div>
+                            <div class="db-table-row"><span>sexo_pessoa</span><span class="db-type">VARCHAR</span></div>
+                            <div class="db-table-row"><span>idade_pessoa</span><span class="db-type">INT</span></div>
+                        </div>
+                    </div>
+                    <div style="margin-top:14px;display:flex;gap:14px;flex-wrap:wrap;">
+                        <div
+                            style="display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);">
+                            <span style="color:var(--accent2);">🔑</span> Chave Primária (composta em BO)
+                        </div>
+                        <div
+                            style="display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);">
+                            <span style="color:var(--accent3);">🔗</span> Chave Estrangeira
+                        </div>
+                        <div
+                            style="display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);">
+                            Pessoa_Envolvida → ON DELETE CASCADE</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 6 · NORMALIZAÇÃO ══════════════════════ -->
+            <div class="slide" id="s6">
+                <div class="slide-badge">06 / Normalização</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label">Processo de Normalização</div>
+                    <h2>Da planilha ao modelo <span class="highlight">3FN</span></h2>
+                    <div class="line"></div>
+                    <div class="g2" style="margin-top:6px;gap:22px;">
+                        <div class="col">
+                            <div class="card">
+                                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+                                    <span class="tag">1ª Forma Normal</span><span class="tag">2ª Forma
+                                        Normal</span><span class="tag">3ª Forma Normal</span>
+                                </div>
+                                <p style="font-size:0.83rem;">O CSV original foi submetido ao processo completo de
+                                    normalização, eliminando grupos repetitivos, dependências parciais e transitivas.
+                                </p>
+                            </div>
+                            <div class="card card-accent2">
+                                <div class="label2" style="margin-bottom:8px;">Entidades criadas</div>
+                                <div class="col" style="gap:8px;">
+                                    <div class="row" style="align-items:center;">
+                                        <div class="icon-c" style="width:32px;height:32px;font-size:12px;">📋</div>
+                                        <p style="font-size:0.8rem;"><strong>Delegacia</strong> — centraliza dados
+                                            administrativos, elimina repetição textual.</p>
+                                    </div>
+                                    <div class="row" style="align-items:center;">
+                                        <div class="icon-c3" style="width:32px;height:32px;font-size:12px;">📍</div>
+                                        <p style="font-size:0.8rem;"><strong>Local_Ocorrencia</strong> — isola atributos
+                                            espaciais, granularidade de bairro.</p>
+                                    </div>
+                                    <div class="row" style="align-items:center;">
+                                        <div class="icon-c2" style="width:32px;height:32px;font-size:12px;">📄</div>
+                                        <p style="font-size:0.8rem;"><strong>Boletim_Ocorrencia</strong> — núcleo
+                                            transacional, PK composta para evitar duplicatas.</p>
+                                    </div>
+                                    <div class="row" style="align-items:center;">
+                                        <div class="icon-c" style="width:32px;height:32px;font-size:12px;">👤</div>
+                                        <p style="font-size:0.8rem;"><strong>Pessoa_Envolvida</strong> — resolve
+                                            cardinalidade 1:N dos delitos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="flex:1;">
+                                <div class="label" style="margin-bottom:10px;">Fluxo de transformação</div>
+                                <div style="display:flex;align-items:flex-start;gap:4px;margin-top:4px;">
+                                    <div class="flow-step">
+                                        <div class="flow-circle"
+                                            style="border-color:var(--accent2);color:var(--accent2);">
+                                            CSV</div>
+                                        <div class="flow-label">Arquivo bruto<br>desnorm.</div>
+                                    </div>
+                                    <div class="flow-arrow">→</div>
+                                    <div class="flow-step">
+                                        <div class="flow-circle">1FN</div>
+                                        <div class="flow-label">Elimina<br>grupos rep.</div>
+                                    </div>
+                                    <div class="flow-arrow">→</div>
+                                    <div class="flow-step">
+                                        <div class="flow-circle">2FN</div>
+                                        <div class="flow-label">Remove dep.<br>parciais</div>
+                                    </div>
+                                    <div class="flow-arrow">→</div>
+                                    <div class="flow-step">
+                                        <div class="flow-circle">3FN</div>
+                                        <div class="flow-label">Remove dep.<br>transitivas</div>
+                                    </div>
+                                    <div class="flow-arrow">→</div>
+                                    <div class="flow-step">
+                                        <div class="flow-circle"
+                                            style="border-color:var(--accent3);color:var(--accent3);">
+                                            BD</div>
+                                        <div class="flow-label">4 tabelas<br>normalizadas</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-accent3">
+                                <div
+                                    style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
+                                    RESULTADO</div>
+                                <p style="font-size:0.82rem;">Integridade referencial garantida com <span
+                                        class="highlight3">ON DELETE CASCADE</span> em Pessoa_Envolvida, evitando
+                                    registros
+                                    órfãos. PK composta no BO assegura exclusão de duplicidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 7 · INTEGRIDADE / CONCORRÊNCIA ══════════════════════ -->
+            <div class="slide" id="s7">
+                <div class="slide-badge">07 / Integridade</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label">Lógicas de Negócio</div>
+                    <h2>Integridade, Concorrência <span class="highlight">&amp; Transacional</span></h2>
+                    <div class="line"></div>
+                    <div class="g3" style="margin-top:8px;">
+                        <div class="card">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                                <div class="icon-c3">ƒ</div>
+                                <div>
+                                    <div style="font-weight:600;font-size:0.85rem;">Function Analítica</div>
+                                    <span class="tag3" style="font-size:0.65rem;">fn_ClassificarFaixaEtaria</span>
+                                </div>
+                            </div>
+                            <p style="font-size:0.78rem;">Categoriza a idade das vítimas/autores em faixas (<em>Menor,
+                                    Jovem, Adulto, Idoso</em>), evitando cálculos repetitivos nos relatórios OLAP.</p>
+                            <div class="code-block" style="margin-top:10px;font-size:0.64rem;">
+                                <span class="kw">IF</span> @idade &lt; 18 → <span class="str">'Menor de
+                                    Idade'</span><br>
+                                <span class="kw">ELSE IF</span> @idade &lt;= 29 → <span class="str">'Jovem
+                                    Adulto'</span><br>
+                                <span class="kw">ELSE IF</span> @idade &lt;= 59 → <span class="str">'Adulto'</span><br>
+                                <span class="kw">ELSE</span> → <span class="str">'Idoso'</span>
+                            </div>
+                        </div>
+                        <div class="card card-accent2">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                                <div class="icon-c2">⚡</div>
+                                <div>
+                                    <div style="font-weight:600;font-size:0.85rem;">Trigger de Integridade</div>
+                                    <span class="tag2" style="font-size:0.65rem;">trg_ValidarDataBO</span>
+                                </div>
+                            </div>
+                            <p style="font-size:0.78rem;">Barreira cronológica: bloqueia qualquer registro de ocorrência
+                                com
+                                <span class="highlight2">data futura</span>, protegendo a base estatística contra erros
+                                de
+                                digitação e anomalias de importação.
+                            </p>
+                            <div class="code-block" style="margin-top:10px;font-size:0.64rem;">
+                                <span class="kw">AFTER INSERT, UPDATE</span><br>
+                                <span class="kw">IF</span> data_bo &gt; <span class="str">GETDATE()</span><br>
+                                RAISERROR + <span class="str">ROLLBACK</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                                <div class="icon-c">🔄</div>
+                                <div>
+                                    <div style="font-weight:600;font-size:0.85rem;">Stored Procedure</div>
+                                    <span class="tag" style="font-size:0.65rem;">sp_InserirOcorrenciaCompleta</span>
+                                </div>
+                            </div>
+                            <p style="font-size:0.78rem;">Inserção atômica de <em>Local + BO</em> num único bloco
+                                transacional. Garante o princípio do <span class="highlight">tudo ou nada</span>: em
+                                falha
+                                de rede ou concorrência, a operação é inteiramente desfeita.</p>
+                            <div class="code-block" style="margin-top:10px;font-size:0.64rem;">
+                                <span class="kw">BEGIN TRANSACTION</span><br>
+                                INSERT Local_Ocorrencia<br>
+                                SET @id_local = SCOPE_IDENTITY()<br>
+                                INSERT Boletim_Ocorrencia<br>
+                                <span class="kw">COMMIT</span> / <span class="str">ROLLBACK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 8 · AUDITORIA ══════════════════════ -->
+            <div class="slide" id="s8">
+                <div class="slide-badge">08 / Auditoria</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label2">Política de Auditoria</div>
+                    <h2>Rastreamento de <span class="highlight2">acesso</span></h2>
+                    <div class="line2"></div>
+                    <div class="g2" style="margin-top:6px;gap:22px;">
+                        <div class="col">
+                            <div class="card card-accent2">
+                                <div class="label2" style="margin-bottom:6px;">Por que auditar?</div>
+                                <p style="font-size:0.83rem;">Pesquisadores têm acesso a dados sensíveis de
+                                    <strong>pessoas
+                                        reais</strong>. Saber quem acessou e o que visualizou é essencial para
+                                    investigações
+                                    forenses e tomadas de decisão.</p>
+                            </div>
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Auditoria de Acesso</div>
+                                <div class="code-block" style="font-size:0.65rem;">
+                                    <span class="kw">CREATE SERVER AUDIT</span><br>
+                                    Auditoria_Pesquisadores_Gov<br>
+                                    <span class="kw">TO FILE</span> (FILEPATH=<span
+                                        class="str">'D:\Logs_Acesso\'</span>)<br>
+                                    <span class="kw">WITH</span> (QUEUE_DELAY=1000,<br>
+                                    ON_FAILURE=<span class="str">SHUTDOWN</span>);<br><br>
+                                    <span class="cm">-- Monitora SELECT em todas as tabelas</span><br>
+                                    ADD (SELECT ON dbo.Boletim_Ocorrencia)<br>
+                                    ADD (SELECT ON dbo.Pessoa_Envolvida)<br>
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-accent3">
+                                <div
+                                    style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:10px;">
+                                    Técnicas Utilizadas</div>
+                                <div class="col" style="gap:10px;">
+                                    <div class="row" style="align-items:center;">
+                                        <div class="icon-c3" style="width:34px;height:34px;font-size:13px;">🔒</div>
+                                        <p style="font-size:0.8rem;"><strong>SQL Server Audit</strong> — implementação
+                                            nativa, sem dependências externas.</p>
+                                    </div>
+                                    <div class="row" style="align-items:center;">
+                                        <div class="icon-c2" style="width:34px;height:34px;font-size:13px;">⛔</div>
+                                        <p style="font-size:0.8rem;"><strong>ON_FAILURE = SHUTDOWN</strong> — se a
+                                            auditoria
+                                            falhar, o banco inteiro é bloqueado.</p>
+                                    </div>
+                                    <div class="row" style="align-items:center;">
+                                        <div class="icon-c" style="width:34px;height:34px;font-size:13px;">⏱️</div>
+                                        <p style="font-size:0.8rem;"><strong>QUEUE_DELAY = 1000ms</strong> — gravação
+                                            assíncrona sem impacto no desempenho.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Validação Geográfica</div>
+                                <p style="font-size:0.8rem;">Coordenadas fora do bounding box de São Paulo são
+                                    capturadas em
+                                    tabela de auditoria <span class="highlight">Auditoria_Validacao_Geografica</span>,
+                                    evitando destinação de recursos públicos para regiões erradas.</p>
+                                <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+                                    <span class="tag2" style="font-size:0.65rem;">lat: -24.00 a -23.35</span>
+                                    <span class="tag2" style="font-size:0.65rem;">lng: -46.82 a -46.36</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 9 · PERMISSÕES ══════════════════════ -->
+            <div class="slide" id="s9">
+                <div class="slide-badge">09 / Permissões</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label">Política de Permissão</div>
+                    <h2>Menor privilégio & <span class="highlight">Mascaramento</span></h2>
+                    <div class="line"></div>
+                    <div class="g2" style="margin-top:6px;gap:22px;">
+                        <div class="col">
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Princípio do menor privilégio</div>
+                                <p style="font-size:0.82rem;">Pesquisadores possuem acesso <strong>apenas de leitura
+                                        (SELECT)</strong>. Nenhum INSERT, UPDATE ou DELETE é permitido, preservando a
+                                    integridade para outros setores públicos.</p>
+                            </div>
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Implementação passo a passo</div>
+                                <div class="code-block" style="font-size:0.64rem;">
+                                    <span class="cm">-- 1. Login</span><br>
+                                    <span class="kw">CREATE LOGIN</span> Pesquisador_Gov<br>
+                                    WITH PASSWORD = <span class="str">'***'</span>;<br><br>
+                                    <span class="cm">-- 2. Usuário no banco</span><br>
+                                    <span class="kw">CREATE USER</span> Login_Pesquisador<br>
+                                    FOR LOGIN Pesquisador_Gov;<br><br>
+                                    <span class="cm">-- 3. Role + Schema</span><br>
+                                    <span class="kw">CREATE ROLE</span> Role_Acesso_Leitura;<br>
+                                    GRANT SELECT ON SCHEMA::dbo<br>
+                                    TO Role_Acesso_Leitura;<br><br>
+                                    <span class="cm">-- 4. Atribuir</span><br>
+                                    ALTER ROLE ... ADD MEMBER Pesquisador;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-accent2">
+                                <div class="label2" style="margin-bottom:8px;">Dynamic Data Masking (DDM)</div>
+                                <p style="font-size:0.82rem;">Pesquisadores estudam padrões geográficos, <strong>não
+                                        precisam ver dados pessoais das vítimas</strong>. O DDM embaralha
+                                    automaticamente
+                                    campos sensíveis.</p>
+                                <div class="code-block" style="margin-top:10px;font-size:0.64rem;">
+                                    <span class="kw">ALTER TABLE</span> dbo.Pessoa_Envolvida<br>
+                                    <span class="kw">ALTER COLUMN</span> nome_pessoa<br>
+                                    ADD MASKED WITH<br>
+                                    (FUNCTION = <span class="str">'default()'</span>);<br><br>
+                                    <span class="cm">-- Leitura: vê tudo mascarado</span><br>
+                                    GRANT UNMASK TO Role_Acesso_Leitura;
+                                </div>
+                            </div>
+                            <div class="card card-accent3">
+                                <div
+                                    style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:10px;">
+                                    Vantagem do Schema</div>
+                                <p style="font-size:0.8rem;">Se uma nova tabela for adicionada, basta vinculá-la ao
+                                    schema —
+                                    as permissões são herdadas automaticamente, sem configuração manual.</p>
+                                <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+                                    <span class="tag">Schema</span><span class="tag">Role</span><span
+                                        class="tag3">DDM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 10 · BACKUP ══════════════════════ -->
+            <div class="slide" id="s10">
+                <div class="slide-badge">10 / Backup</div>
+                <div style="width:100%;max-width:920px;" class="animate-children">
+                    <div class="label">Política de Backup</div>
+                    <h2>Estratégia <span class="highlight">Full · Diff · Log</span></h2>
+                    <div class="line"></div>
+                    <div class="g3" style="margin-top:8px;">
+                        <div class="card">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                                <div class="icon-c">💾</div>
+                                <div>
+                                    <div style="font-weight:700;font-size:0.9rem;">Backup Full</div><span class="tag"
+                                        style="font-size:0.65rem;">Diário · 02:00</span>
+                                </div>
+                            </div>
+                            <p style="font-size:0.78rem;">Base principal de recuperação. Agendado às 02h — menor
+                                movimento
+                                operacional. Garante ponto íntegro e confiável dos dados.</p>
+                            <div class="code-block" style="margin-top:10px;font-size:0.63rem;">
+                                BACKUP DATABASE CrimeData_DB<br>
+                                TO DISK = @FileName<br>
+                                <span class="kw">WITH</span> COMPRESSION, INIT, STATS=10;
+                            </div>
+                        </div>
+                        <div class="card card-accent3">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                                <div class="icon-c3">🔄</div>
+                                <div>
+                                    <div style="font-weight:700;font-size:0.9rem;">Backup Diferencial</div><span
+                                        class="tag3" style="font-size:0.65rem;">A cada 3h · início 05:00</span>
+                                </div>
+                            </div>
+                            <p style="font-size:0.78rem;">Captura apenas alterações desde o último Full. Equilibra
+                                atualidade dos dados, tamanho dos arquivos e impacto no servidor.</p>
+                            <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:4px;">
+                                <span class="tag3" style="font-size:0.62rem;">05h</span><span class="tag3"
+                                    style="font-size:0.62rem;">08h</span><span class="tag3"
+                                    style="font-size:0.62rem;">11h</span><span class="tag3"
+                                    style="font-size:0.62rem;">14h</span><span class="tag3"
+                                    style="font-size:0.62rem;">17h</span><span class="tag3"
+                                    style="font-size:0.62rem;">20h</span><span class="tag3"
+                                    style="font-size:0.62rem;">23h</span>
+                            </div>
+                        </div>
+                        <div class="card card-accent2">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                                <div class="icon-c2">📋</div>
+                                <div>
+                                    <div style="font-weight:700;font-size:0.9rem;">Backup de Log</div><span class="tag2"
+                                        style="font-size:0.65rem;">A cada 30 min</span>
+                                </div>
+                            </div>
+                            <p style="font-size:0.78rem;">Registra cada transação (flagrantes, provas, alterações de
+                                status). Permite recuperação ponto a ponto — essencial em auditorias judiciais.</p>
+                            <div class="code-block" style="margin-top:10px;font-size:0.63rem;">
+                                BACKUP <span class="kw">LOG</span> CrimeData_DB<br>
+                                TO DISK = @FileName<br>
+                                <span class="kw">WITH</span> COMPRESSION, INIT;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top:16px;padding:14px 20px;">
+                        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+                            <div style="display:flex;align-items:center;gap:8px;"><span class="tag">Modelo
+                                    FULL</span><span style="font-size:0.78rem;color:var(--muted);">Histórico completo de
+                                    transações</span>
+                            </div>
+                            <div style="display:flex;align-items:center;gap:8px;"><span class="tag3">SQL Server
+                                    Agent</span><span style="font-size:0.78rem;color:var(--muted);">Jobs automatizados ·
+                                    zero intervenção humana</span></div>
+                            <div style="display:flex;align-items:center;gap:8px;"><span
+                                    class="tag2">Recuperação</span><span
+                                    style="font-size:0.78rem;color:var(--muted);">Full → Diff → Logs</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 11 · REPLICAÇÃO ══════════════════════ -->
+            <div class="slide" id="s11">
+                <div class="slide-badge">11 / Replicação</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label">Replicação do Banco</div>
+                    <h2>Always On <span class="highlight">Availability Groups</span></h2>
+                    <div class="line"></div>
+                    <div class="g2" style="margin-top:8px;gap:22px;">
+                        <div class="col">
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Arquitetura distribuída</div>
+                                <div style="display:flex;gap:16px;margin-top:4px;">
+                                    <div class="card"
+                                        style="flex:1;text-align:center;border-color:rgba(0,200,255,0.3);">
+                                        <div style="font-size:1.5rem;margin-bottom:6px;">🖥️</div>
+                                        <div
+                                            style="font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--accent);font-weight:500;">
+                                            sql_primario</div>
+                                        <div style="font-size:0.65rem;color:var(--muted);margin-top:4px;">Porta
+                                            1433<br>Inserções OLTP</div>
+                                    </div>
+                                    <div style="display:flex;align-items:center;color:var(--accent);font-size:1.2rem;">⇄
+                                    </div>
+                                    <div class="card"
+                                        style="flex:1;text-align:center;border-color:rgba(168,255,62,0.3);">
+                                        <div style="font-size:1.5rem;margin-bottom:6px;">🖥️</div>
+                                        <div
+                                            style="font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--accent3);font-weight:500;">
+                                            sql_secundario</div>
+                                        <div style="font-size:0.65rem;color:var(--muted);margin-top:4px;">Porta
+                                            1434<br>Leitura / DW</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-accent2">
+                                <div class="label2" style="margin-bottom:8px;">Problema resolvido</div>
+                                <p style="font-size:0.8rem;">Cargas ETL do Data Warehouse <strong>não competem</strong>
+                                    com
+                                    transações do dia a dia. O primário atende inserções; o secundário atende consultas
+                                    pesadas em modo <span class="highlight2">Read-Intent</span>.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Configuração técnica</div>
+                                <div class="code-block" style="font-size:0.63rem;">
+                                    <span class="kw">CREATE AVAILABILITY GROUP</span> [AG_CrimeData]<br>
+                                    WITH (CLUSTER_TYPE = NONE)<br>
+                                    FOR REPLICA ON<br>
+                                    N'sql_primario' WITH (<br>
+                                    AVAILABILITY_MODE = <span class="str">ASYNCHRONOUS_COMMIT</span>,<br>
+                                    FAILOVER_MODE = MANUAL,<br>
+                                    SEEDING_MODE = AUTOMATIC<br>
+                                    ),<br>
+                                    N'sql_secundario' WITH (<br>
+                                    SECONDARY_ROLE(ALLOW_CONNECTIONS = ALL)<br>
+                                    );
+                                </div>
+                            </div>
+                            <div class="card card-accent3">
+                                <div
+                                    style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
+                                    Validação em tempo real</div>
+                                <p style="font-size:0.79rem;">90% da base histórica carregada inicialmente. Os 10%
+                                    restantes
+                                    inseridos ao vivo no primário — o <span class="highlight3">SELECT COUNT(*)</span> na
+                                    réplica refletiu as inserções instantaneamente, atestando a integridade.</p>
+                                <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">
+                                    <span class="tag3">Docker containers</span><span class="tag">Certificados
+                                        SSL</span><span class="tag2">Endpoint TCP:5022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 12 · WAREHOUSE INTERLUDE ══════════════════════ -->
+            <div class="slide" id="s12">
+                <div class="scan-line"></div>
+                <div style="text-align:center;" class="animate-children">
+                    <div class="wh-title pulse">DATA<br>WAREHOUSE</div>
+                    <div class="wh-imgs">
+                        <div class="wh-img-card">
+                            <div class="wh-icon">🏗️</div>
+                            <div class="wh-cap">Esquema Estrela</div>
+                        </div>
+                        <div class="wh-img-card">
+                            <div class="wh-icon">🔄</div>
+                            <div class="wh-cap">Processo ETL</div>
+                        </div>
+                        <div class="wh-img-card">
+                            <div class="wh-icon">📊</div>
+                            <div class="wh-cap">Consultas OLAP</div>
+                        </div>
+                        <div class="wh-img-card">
+                            <div class="wh-icon">🔑</div>
+                            <div class="wh-cap">Surrogate Keys</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 13 · ESQUEMA DIMENSIONAL ══════════════════════ -->
+            <div class="slide" id="s13">
+                <div class="slide-badge">13 / Esquema Dimensional</div>
+                <div style="width:100%;max-width:980px;display:flex;gap:28px;align-items:center;"
+                    class="animate-children">
+                    <div style="flex:1.1;">
+                        <div class="label">Data Warehouse</div>
+                        <h2>Diagrama do Esquema <span class="highlight">Estrela</span></h2>
+                        <div class="line"></div>
+                        <!-- Star Schema visual -->
+                        <div style="position:relative;width:100%;height:340px;margin-top:10px;">
+                            <!-- CENTER FACT -->
+                            <div
+                                style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,200,255,0.12);border:2px solid var(--accent);border-radius:10px;padding:12px 14px;text-align:center;font-family:'DM Mono',monospace;font-size:0.68rem;color:var(--accent);z-index:2;min-width:130px;">
+                                <div style="font-weight:700;font-size:0.75rem;margin-bottom:6px;">⭐ FATO_OCORRENCIAS
+                                </div>
+                                <div style="color:rgba(232,244,255,0.5);font-size:0.6rem;">sk_tempo · sk_local</div>
+                                <div style="color:rgba(232,244,255,0.5);font-size:0.6rem;">sk_pessoa · sk_delegacia
+                                </div>
+                                <div style="color:var(--accent2);font-size:0.6rem;margin-top:4px;">flag_vitima_fatal
+                                </div>
+                            </div>
+                            <!-- TOP: DIM_TEMPO -->
+                            <div
+                                style="position:absolute;top:4px;left:50%;transform:translateX(-50%);background:rgba(10,21,32,0.9);border:1px solid var(--border);border-radius:8px;padding:8px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);min-width:100px;">
+                                <div style="color:var(--accent3);font-weight:600;margin-bottom:4px;">⏰ Dim_Tempo</div>
+                                sk_tempo · data_completa<br>ano · mes · hora
+                            </div>
+                            <!-- BOTTOM: DIM_PESSOA -->
+                            <div
+                                style="position:absolute;bottom:4px;left:50%;transform:translateX(-50%);background:rgba(10,21,32,0.9);border:1px solid var(--border);border-radius:8px;padding:8px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);min-width:100px;">
+                                <div style="color:#a855f7;font-weight:600;margin-bottom:4px;">👤 Dim_Pessoa</div>
+                                sk_pessoa · sexo<br>idade · profissão · cor
+                            </div>
+                            <!-- LEFT: DIM_DELEGACIA -->
+                            <div
+                                style="position:absolute;top:50%;left:0;transform:translateY(-50%);background:rgba(10,21,32,0.9);border:1px solid var(--border);border-radius:8px;padding:8px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);min-width:100px;">
+                                <div style="color:var(--accent2);font-weight:600;margin-bottom:4px;">📋 Dim_Delegacia
+                                </div>
+                                sk_delegacia<br>nome · seccional<br>departamento
+                            </div>
+                            <!-- RIGHT: DIM_LOCAL -->
+                            <div
+                                style="position:absolute;top:50%;right:0;transform:translateY(-50%);background:rgba(10,21,32,0.9);border:1px solid var(--border);border-radius:8px;padding:8px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--muted);min-width:100px;">
+                                <div style="color:var(--accent3);font-weight:600;margin-bottom:4px;">📍 Dim_Local</div>
+                                sk_local · bairro<br>cidade · lat · lng<br>tipo_local
+                            </div>
+                            <!-- Lines (SVG) -->
+                            <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="50%" y1="50%" x2="50%" y2="14%" stroke="#0e2030" stroke-width="1.5" />
+                                <line x1="50%" y1="50%" x2="50%" y2="87%" stroke="#0e2030" stroke-width="1.5" />
+                                <line x1="50%" y1="50%" x2="13%" y2="50%" stroke="#0e2030" stroke-width="1.5" />
+                                <line x1="50%" y1="50%" x2="87%" y2="50%" stroke="#0e2030" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div style="flex:0.9;" class="col">
                         <div class="card card-accent3">
                             <div
                                 style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
-                                Surrogate Key na prática</div>
-                            <div class="code-block" style="font-size:0.64rem;">
-                                <span class="cm">-- Dataset SP-Cidade</span><br>
-                                bairro_id = 100 → <span class="kw">sk_local = 1</span><br><br>
-                                <span class="cm">-- Novo dataset SP-Estado (integrado)</span><br>
-                                bairro_id = 100 → <span class="kw">sk_local = 2</span><br><br>
-                                <span class="cm">-- Sem colisão de chaves!</span>
-                            </div>
+                                Por que esquema estrela?</div>
+                            <p style="font-size:0.8rem;">Otimizado para consultas OLAP. A tabela fato centraliza os
+                                eventos;
+                                as dimensões enriquecem a análise com contexto temporal, geográfico, demográfico e
+                                administrativo.</p>
                         </div>
-                        <div class="card" style="flex:1;">
-                            <div class="label" style="margin-bottom:8px;">flag_vitima_fatal</div>
-                            <p style="font-size:0.8rem;">Medida central da Fato: flag binária que permite calcular
-                                <strong>taxa de letalidade</strong>, comparar volumes e filtrar ocorrências críticas nas
-                                9 consultas OLAP.
+                        <div class="card card-accent2">
+                            <div class="label2" style="margin-bottom:8px;">Surrogate Keys (SK)</div>
+                            <p style="font-size:0.79rem;">Chaves substitutas evitam colisão de IDs ao integrar múltiplos
+                                datasets. Ex.: bairro com ID 100 em SP-cidade vira SK=1; mesmo ID de SP-estado vira
+                                SK=2.
                             </p>
-                            <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
-                                <span class="tag2">SUM(flag_vitima_fatal)</span>
-                                <span class="tag">COUNT(*)</span>
-                                <span class="tag3">ROUND(..., 2)</span>
+                        </div>
+                        <div class="card" style="display:flex;gap:16px;justify-content:space-around;text-align:center;">
+                            <div>
+                                <div
+                                    style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:var(--accent);">
+                                    1</div>
+                                <div style="font-size:0.68rem;color:var(--muted);">Tabela Fato</div>
+                            </div>
+                            <div>
+                                <div
+                                    style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:var(--accent3);">
+                                    4</div>
+                                <div style="font-size:0.68rem;color:var(--muted);">Dimensões</div>
+                            </div>
+                            <div>
+                                <div
+                                    style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:var(--accent2);">
+                                    9</div>
+                                <div style="font-size:0.68rem;color:var(--muted);">Consultas OLAP</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ══════════════════════ SLIDE 15 · ETL ══════════════════════ -->
-        <div class="slide" id="s15">
-            <div class="slide-badge">15 / ETL</div>
-            <div style="width:100%;max-width:900px;" class="animate-children">
-                <div class="label">Data Warehouse</div>
-                <h2>Processo <span class="highlight">ETL</span></h2>
-                <div class="line"></div>
-                <div
-                    style="display:flex;align-items:center;gap:0;justify-content:center;margin-top:16px;flex-wrap:wrap;gap:0;">
-                    <div class="card" style="text-align:center;min-width:160px;border-color:rgba(255,92,53,0.35);">
-                        <div style="font-size:2rem;margin-bottom:8px;">📂</div>
-                        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--accent2);">
-                            EXTRACT</div>
-                        <p style="font-size:0.74rem;margin-top:6px;">Leitura dos dados do banco OLTP
-                            (Boletim_Ocorrencia, Pessoa_Envolvida, Delegacia, Local_Ocorrencia)</p>
-                    </div>
-                    <div style="font-size:1.4rem;color:var(--muted);padding:0 12px;">→</div>
-                    <div class="card" style="text-align:center;min-width:160px;border-color:rgba(0,200,255,0.35);">
-                        <div style="font-size:2rem;margin-bottom:8px;">⚙️</div>
-                        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--accent);">
-                            TRANSFORM</div>
-                        <p style="font-size:0.74rem;margin-top:6px;">Geração de Surrogate Keys, criação da Dim_Tempo a
-                            partir de datas, normalização de categorias e classificação etária</p>
-                    </div>
-                    <div style="font-size:1.4rem;color:var(--muted);padding:0 12px;">→</div>
-                    <div class="card" style="text-align:center;min-width:160px;border-color:rgba(168,255,62,0.35);">
-                        <div style="font-size:2rem;margin-bottom:8px;">🏗️</div>
-                        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--accent3);">
-                            LOAD</div>
-                        <p style="font-size:0.74rem;margin-top:6px;">Carga nas tabelas dimensionais e na
-                            Fato_Ocorrencias no Data Warehouse (réplica secundária Read-Intent)</p>
-                    </div>
-                </div>
-                <div class="g2" style="margin-top:20px;gap:20px;">
-                    <div class="card card-accent2">
-                        <div class="label2" style="margin-bottom:8px;">Separação OLTP / OLAP</div>
-                        <p style="font-size:0.8rem;">O ETL é executado <strong>na réplica secundária</strong> (Always On
-                            AG), isolando a carga analítica do servidor transacional e evitando gargalos nas inserções
-                            diárias de BOs.</p>
-                    </div>
-                    <div class="card card-accent3">
-                        <div
-                            style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
-                            Transformações principais</div>
-                        <div style="display:flex;flex-wrap:wrap;gap:6px;">
-                            <span class="tag3">Surrogate Keys</span>
-                            <span class="tag3">Dim_Tempo explodida</span>
-                            <span class="tag3">Faixas etárias (fn_ClassificarFaixaEtaria)</span>
-                            <span class="tag3">flag_vitima_fatal normalizada</span>
+            <!-- ══════════════════════ SLIDE 14 · COMO FOI FEITO O ESQUEMA ══════════════════════ -->
+            <div class="slide" id="s14">
+                <div class="slide-badge">14 / Esquema Dimensional</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label">Como foi feito</div>
+                    <h2>Construção do <span class="highlight">Esquema Dimensional</span></h2>
+                    <div class="line"></div>
+                    <div class="g2" style="margin-top:8px;gap:22px;">
+                        <div class="col">
+                            <div class="card card-accent2">
+                                <div class="label2" style="margin-bottom:8px;">Decisão de design</div>
+                                <p style="font-size:0.82rem;">A <strong>Fato_Ocorrencias</strong> foi escolhida como
+                                    centro
+                                    por ser o objeto principal de estudo. Toda inteligência extraída pelos pesquisadores
+                                    orbita em torno dos eventos criminais registrados.</p>
+                            </div>
+                            <div class="card">
+                                <div class="label" style="margin-bottom:8px;">Mapeamento OLTP → DW</div>
+                                <div class="col" style="gap:8px;">
+                                    <div
+                                        style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;padding:6px 0;border-bottom:1px solid var(--border);">
+                                        <span style="color:var(--muted);">Delegacia (OLTP)</span>
+                                        <span style="color:var(--accent);">→</span>
+                                        <span>Dim_Delegacia (DW)</span>
+                                    </div>
+                                    <div
+                                        style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;padding:6px 0;border-bottom:1px solid var(--border);">
+                                        <span style="color:var(--muted);">Local_Ocorrencia</span>
+                                        <span style="color:var(--accent);">→</span>
+                                        <span>Dim_Local</span>
+                                    </div>
+                                    <div
+                                        style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;padding:6px 0;border-bottom:1px solid var(--border);">
+                                        <span style="color:var(--muted);">Pessoa_Envolvida</span>
+                                        <span style="color:var(--accent);">→</span>
+                                        <span>Dim_Pessoa</span>
+                                    </div>
+                                    <div
+                                        style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;padding:6px 0;">
+                                        <span style="color:var(--muted);">data_ocorrencia</span>
+                                        <span style="color:var(--accent);">→</span>
+                                        <span>Dim_Tempo</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══════════════════════ SLIDE 16 · CONSULTAS OLAP ══════════════════════ -->
-        <div class="slide" id="s16">
-            <div class="slide-badge">16 / OLAP</div>
-            <div style="width:100%;max-width:980px;" class="animate-children">
-                <div class="label">Inteligência Analítica</div>
-                <h2>Consultas <span class="highlight">OLAP</span></h2>
-                <div class="line"></div>
-                <div class="g3" style="margin-top:8px;">
-                    <div class="olap-card">
-                        <div class="olap-num">01</div>
-                        <div>
-                            <div class="olap-title">Regiões com maior criminalidade</div>
-                            <div class="olap-desc">Bairro + Cidade + Total de ocorrências. Direciona recursos de
-                                segurança pública.</div>
-                        </div>
-                    </div>
-                    <div class="olap-card">
-                        <div class="olap-num">02</div>
-                        <div>
-                            <div class="olap-title">Profissões mais vitimadas</div>
-                            <div class="olap-desc">Profissão + Total de vítimas. Subsidia policiamento estratégico por
-                                área de atuação.</div>
-                        </div>
-                    </div>
-                    <div class="olap-card">
-                        <div class="olap-num">03</div>
-                        <div>
-                            <div class="olap-title">Análise socioeconômica por cor/raça</div>
-                            <div class="olap-desc">Cor · Escolaridade · Profissão · Vítimas fatais. Identifica
-                                vulnerabilidade social.</div>
-                        </div>
-                    </div>
-                    <div class="olap-card">
-                        <div class="olap-num">04</div>
-                        <div>
-                            <div class="olap-title">Vítimas fatais por período</div>
-                            <div class="olap-desc">Série temporal por Ano/Mês. Detecta sazonalidade e valida políticas
-                                públicas.</div>
-                        </div>
-                    </div>
-                    <div class="olap-card">
-                        <div class="olap-num">05</div>
-                        <div>
-                            <div class="olap-title">Perfil de escolaridade</div>
-                            <div class="olap-desc">Grau de instrução × ocorrências. Correlaciona vulnerabilidade
-                                educacional e criminalidade.</div>
-                        </div>
-                    </div>
-                    <div class="olap-card">
-                        <div class="olap-num">06</div>
-                        <div>
-                            <div class="olap-title">Ranking de delegacias por volume</div>
-                            <div class="olap-desc">CTE Top 5 delegacias sobrecarregadas. Orienta alocação de policiais e
-                                recursos.</div>
-                        </div>
-                    </div>
-                    <div class="olap-card">
-                        <div class="olap-num">07</div>
-                        <div>
-                            <div class="olap-title">Letalidade por tipo de local</div>
-                            <div class="olap-desc">Taxa de letalidade % por ambiente. Prioriza prontidão de ambulâncias
-                                e viaturas.</div>
-                        </div>
-                    </div>
-                    <div class="olap-card">
-                        <div class="olap-num">08</div>
-                        <div>
-                            <div class="olap-title">Vulnerabilidade demográfica (Roll-up)</div>
-                            <div class="olap-desc">Faixa etária × gênero × mês. Slice & Dice para prevenção sazonal.
+                        <div class="col">
+                            <div class="card card-accent3">
+                                <div
+                                    style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
+                                    Surrogate Key na prática</div>
+                                <div class="code-block" style="font-size:0.64rem;">
+                                    <span class="cm">-- Dataset SP-Cidade</span><br>
+                                    bairro_id = 100 → <span class="kw">sk_local = 1</span><br><br>
+                                    <span class="cm">-- Novo dataset SP-Estado (integrado)</span><br>
+                                    bairro_id = 100 → <span class="kw">sk_local = 2</span><br><br>
+                                    <span class="cm">-- Sem colisão de chaves!</span>
+                                </div>
+                            </div>
+                            <div class="card" style="flex:1;">
+                                <div class="label" style="margin-bottom:8px;">flag_vitima_fatal</div>
+                                <p style="font-size:0.8rem;">Medida central da Fato: flag binária que permite calcular
+                                    <strong>taxa de letalidade</strong>, comparar volumes e filtrar ocorrências críticas
+                                    nas
+                                    9 consultas OLAP.
+                                </p>
+                                <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
+                                    <span class="tag2">SUM(flag_vitima_fatal)</span>
+                                    <span class="tag">COUNT(*)</span>
+                                    <span class="tag3">ROUND(..., 2)</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="olap-card">
-                        <div class="olap-num">09</div>
-                        <div>
-                            <div class="olap-title">Criticidade por turno e localidade</div>
-                            <div class="olap-desc">Madrugada/Manhã/Tarde/Noite × bairro × letalidade. Dimensiona escalas
-                                de plantão.</div>
+                </div>
+            </div>
+
+            <!-- ══════════════════════ SLIDE 15 · ETL ══════════════════════ -->
+            <div class="slide" id="s15">
+                <div class="slide-badge">15 / ETL</div>
+                <div style="width:100%;max-width:900px;" class="animate-children">
+                    <div class="label">Data Warehouse</div>
+                    <h2>Processo <span class="highlight">ETL</span></h2>
+                    <div class="line"></div>
+                    <div
+                        style="display:flex;align-items:center;gap:0;justify-content:center;margin-top:16px;flex-wrap:wrap;gap:0;">
+                        <div class="card" style="text-align:center;min-width:160px;border-color:rgba(255,92,53,0.35);">
+                            <div style="font-size:2rem;margin-bottom:8px;">📂</div>
+                            <div
+                                style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--accent2);">
+                                EXTRACT</div>
+                            <p style="font-size:0.74rem;margin-top:6px;">Leitura dos dados do banco OLTP
+                                (Boletim_Ocorrencia, Pessoa_Envolvida, Delegacia, Local_Ocorrencia)</p>
+                        </div>
+                        <div style="font-size:1.4rem;color:var(--muted);padding:0 12px;">→</div>
+                        <div class="card" style="text-align:center;min-width:160px;border-color:rgba(0,200,255,0.35);">
+                            <div style="font-size:2rem;margin-bottom:8px;">⚙️</div>
+                            <div
+                                style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--accent);">
+                                TRANSFORM</div>
+                            <p style="font-size:0.74rem;margin-top:6px;">Geração de Surrogate Keys, criação da Dim_Tempo
+                                a
+                                partir de datas, normalização de categorias e classificação etária</p>
+                        </div>
+                        <div style="font-size:1.4rem;color:var(--muted);padding:0 12px;">→</div>
+                        <div class="card" style="text-align:center;min-width:160px;border-color:rgba(168,255,62,0.35);">
+                            <div style="font-size:2rem;margin-bottom:8px;">🏗️</div>
+                            <div
+                                style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--accent3);">
+                                LOAD</div>
+                            <p style="font-size:0.74rem;margin-top:6px;">Carga nas tabelas dimensionais e na
+                                Fato_Ocorrencias no Data Warehouse (réplica secundária Read-Intent)</p>
+                        </div>
+                    </div>
+                    <div class="g2" style="margin-top:20px;gap:20px;">
+                        <div class="card card-accent2">
+                            <div class="label2" style="margin-bottom:8px;">Separação OLTP / OLAP</div>
+                            <p style="font-size:0.8rem;">O ETL é executado <strong>na réplica secundária</strong>
+                                (Always On
+                                AG), isolando a carga analítica do servidor transacional e evitando gargalos nas
+                                inserções
+                                diárias de BOs.</p>
+                        </div>
+                        <div class="card card-accent3">
+                            <div
+                                style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--accent3);margin-bottom:8px;">
+                                Transformações principais</div>
+                            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+                                <span class="tag3">Surrogate Keys</span>
+                                <span class="tag3">Dim_Tempo explodida</span>
+                                <span class="tag3">Faixas etárias (fn_ClassificarFaixaEtaria)</span>
+                                <span class="tag3">flag_vitima_fatal normalizada</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- ══════════════════════ SLIDE 16 · CONSULTAS OLAP ══════════════════════ -->
+            <div class="slide" id="s16">
+                <div class="slide-badge">16 / OLAP</div>
+                <div style="width:100%;max-width:980px;" class="animate-children">
+                    <div class="label">Inteligência Analítica</div>
+                    <h2>Consultas <span class="highlight">OLAP</span></h2>
+                    <div class="line"></div>
+                    <div class="g3" style="margin-top:8px;">
+                        <div class="olap-card">
+                            <div class="olap-num">01</div>
+                            <div>
+                                <div class="olap-title">Regiões com maior criminalidade</div>
+                                <div class="olap-desc">Bairro + Cidade + Total de ocorrências. Direciona recursos de
+                                    segurança pública.</div>
+                            </div>
+                        </div>
+                        <div class="olap-card">
+                            <div class="olap-num">02</div>
+                            <div>
+                                <div class="olap-title">Profissões mais vitimadas</div>
+                                <div class="olap-desc">Profissão + Total de vítimas. Subsidia policiamento estratégico
+                                    por
+                                    área de atuação.</div>
+                            </div>
+                        </div>
+                        <div class="olap-card">
+                            <div class="olap-num">03</div>
+                            <div>
+                                <div class="olap-title">Análise socioeconômica por cor/raça</div>
+                                <div class="olap-desc">Cor · Escolaridade · Profissão · Vítimas fatais. Identifica
+                                    vulnerabilidade social.</div>
+                            </div>
+                        </div>
+                        <div class="olap-card">
+                            <div class="olap-num">04</div>
+                            <div>
+                                <div class="olap-title">Vítimas fatais por período</div>
+                                <div class="olap-desc">Série temporal por Ano/Mês. Detecta sazonalidade e valida
+                                    políticas
+                                    públicas.</div>
+                            </div>
+                        </div>
+                        <div class="olap-card">
+                            <div class="olap-num">05</div>
+                            <div>
+                                <div class="olap-title">Perfil de escolaridade</div>
+                                <div class="olap-desc">Grau de instrução × ocorrências. Correlaciona vulnerabilidade
+                                    educacional e criminalidade.</div>
+                            </div>
+                        </div>
+                        <div class="olap-card">
+                            <div class="olap-num">06</div>
+                            <div>
+                                <div class="olap-title">Ranking de delegacias por volume</div>
+                                <div class="olap-desc">CTE Top 5 delegacias sobrecarregadas. Orienta alocação de
+                                    policiais e
+                                    recursos.</div>
+                            </div>
+                        </div>
+                        <div class="olap-card">
+                            <div class="olap-num">07</div>
+                            <div>
+                                <div class="olap-title">Letalidade por tipo de local</div>
+                                <div class="olap-desc">Taxa de letalidade % por ambiente. Prioriza prontidão de
+                                    ambulâncias
+                                    e viaturas.</div>
+                            </div>
+                        </div>
+                        <div class="olap-card">
+                            <div class="olap-num">08</div>
+                            <div>
+                                <div class="olap-title">Vulnerabilidade demográfica (Roll-up)</div>
+                                <div class="olap-desc">Faixa etária × gênero × mês. Slice & Dice para prevenção sazonal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="olap-card">
+                            <div class="olap-num">09</div>
+                            <div>
+                                <div class="olap-title">Criticidade por turno e localidade</div>
+                                <div class="olap-desc">Madrugada/Manhã/Tarde/Noite × bairro × letalidade. Dimensiona
+                                    escalas
+                                    de plantão.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /deck -->
+
+        <!-- NAV -->
+        <div id="nav">
+            <button class="nav-btn" id="btn-prev" onclick="go(-1)">←</button>
+            <span id="slide-counter">01 / 16</span>
+            <div class="dot-nav" id="dot-nav"></div>
+            <button class="nav-btn" id="btn-next" onclick="go(1)">→</button>
         </div>
-
-    </div><!-- /deck -->
-
-    <!-- NAV -->
-    <div id="nav">
-        <button class="nav-btn" id="btn-prev" onclick="go(-1)">←</button>
-        <span id="slide-counter">01 / 16</span>
-        <div class="dot-nav" id="dot-nav"></div>
-        <button class="nav-btn" id="btn-next" onclick="go(1)">→</button>
     </div>
-</div>
 
     <script>
         const slides = document.querySelectorAll('.slide');
